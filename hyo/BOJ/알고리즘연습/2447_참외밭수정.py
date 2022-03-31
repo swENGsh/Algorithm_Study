@@ -25,4 +25,4 @@ smallbox = smallw * smallh
 # 참외 개수
 t_area = bigbox - smallbox
 total = t_area*K
-print(total)
+print(total) 
