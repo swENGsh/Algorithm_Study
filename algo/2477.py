@@ -20,5 +20,5 @@ for i in range(len(arr)):
 
 mn_r = abs(arr[(mx_ridx - 1) % 6][1] - arr[(mx_ridx + 1) % 6][1])
 mn_c = abs(arr[(mx_cidx - 1) % 6][1] - arr[(mx_cidx + 1) % 6][1])
-total_area = (mx_r * mx_c) - (mn_r * mn_c)
-print(total_area * K)
+total = (mx_r * mx_c) - (mn_r * mn_c)
+print(total * K)
