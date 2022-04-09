@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 def comb(start):
     if len(ans) == 6:
         print(*ans)

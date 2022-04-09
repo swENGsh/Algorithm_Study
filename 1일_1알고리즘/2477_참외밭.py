@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 ans = 0
 K = int(input())
 lst = []
