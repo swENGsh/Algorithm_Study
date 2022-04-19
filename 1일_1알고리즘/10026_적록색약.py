@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 def BFS(a, b):
     Q = []
     dr = [-1, 1, 0, 0]

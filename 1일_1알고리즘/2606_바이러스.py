@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 def DFS(n):
     global ans
     visit[n] = 1

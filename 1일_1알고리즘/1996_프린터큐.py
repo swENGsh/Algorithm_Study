@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 T = int(input())
 
 for i in range(T):

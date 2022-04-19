@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>CREATE</h1>
+  <button type="button" class="btn btn-outline-primary card-link me-2" onclick="location.href='{% url 'eithers:index' %}'">Back</button>
+  <hr>
+  <form action="{% url 'eithers:create' %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock content %}
