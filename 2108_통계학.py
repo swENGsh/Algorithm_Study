@@ -1,5 +1,9 @@
+'''
+분류 : 수학, 구현, 정렬
+정렬 과정에서의 시간초과에 유의
+상황에 따른 최빈값 찾기가 핵심
+'''
 import sys
-sys.stdin = open('imput.txt')
 
 N = int(sys.stdin.readline())
 lst = [] # 입력값을 저장할 리스트
