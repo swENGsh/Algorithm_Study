@@ -25,7 +25,7 @@ c_direct, c_idx = map(int, input().split())
 
 result = 0
 if c_direct == 1:
-    for d in range(len(direct_lst)):
+    for d in range(cnt):
         if direct_lst[d] == 1:
             result += abs(c_idx - idx_lst[d])
         elif direct_lst[d] == 2:
@@ -37,7 +37,7 @@ if c_direct == 1:
         elif direct_lst[d] == 4:
             result += (w - c_idx) + idx_lst[d]
 elif c_direct == 2:
-    for d in range(len(direct_lst)):
+    for d in range(cnt):
         if direct_lst[d] == 1:
             left = c_idx + h + idx_lst[d]
             right = (w - c_idx) + h + (w - idx_lst[d])
@@ -49,7 +49,7 @@ elif c_direct == 2:
         elif direct_lst[d] == 4:
             result += (w - c_idx) + (h - idx_lst[d])
 elif c_direct == 3:
-    for d in range(len(direct_lst)):
+    for d in range(cnt):
         if direct_lst[d] == 1:
             result += c_idx + idx_lst[d]
         elif direct_lst[d] == 2:
@@ -61,7 +61,7 @@ elif c_direct == 3:
             right = (h - c_idx) + w + (h - idx_lst[d])
             result += min(left, right)
 elif c_direct == 4:
-    for d in range(len(direct_lst)):
+    for d in range(cnt):
         if direct_lst[d] == 1:
             result += c_idx + (w - idx_lst[d])
         elif direct_lst[d] == 2:
