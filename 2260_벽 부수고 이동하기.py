@@ -1,6 +1,5 @@
 import sys;sys.stdin=open('2260.txt')
 from collections import deque
-
 def bfs(r, c, d):
     q = deque()
     q.append((r, c, d))
