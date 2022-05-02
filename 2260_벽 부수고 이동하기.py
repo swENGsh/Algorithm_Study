@@ -6,20 +6,24 @@ def bfs(r, c, d):
     v[r][c][d] = 1
     while q:
         r, c, d = q.popleft()
+        #종료조건
         if (r, c) == (N - 1, M - 1):
             return v[r][c][d]
         for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
             nr, nc = r + dr, c + dc
             if 0 <= nr < N and 0 <= nc < M:
+                #벽을 만났는데 아직 벽뚫기를 안한 경우
                 if arr[nr][nc] == 1 and d == 0:
                     v[nr][nc][1] = v[r][c][0] + 1
                     q.append((nr, nc, 1))
+                #길을 만났고, 아직 거리가 측정이 안된곳이라면
                 elif arr[nr][nc] == 0 and v[nr][nc][d] == 0:
                     v[nr][nc][d] = v[r][c][d] + 1
                     q.append((nr, nc, d))
     return -1
 N, M = map(int, input().split())
 arr = [list(map(int, input())) for _ in range(N)]
+#3차원 배열
 v = [[[0]*2 for _ in range(M)] for _ in range(N)]
 
 print(bfs(0, 0, 0))
