@@ -51,7 +51,7 @@ def bfs():
                         visit[nr][nc] = 1
                         Q.append((nr, nc))
                     if cheeze[nr][nc] == 1:
-                        cheeze[nr][nc] = 0
+                        cheeze[nr][nc] += 1
                         cnt += 1
                         visit[nr][nc] = 1
     cnt_lst.append(cnt)
