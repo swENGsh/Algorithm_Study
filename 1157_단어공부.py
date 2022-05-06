@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('sample.txt')
-
 word = input()
 word_list = []
 max_cnt = 0

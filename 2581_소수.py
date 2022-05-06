@@ -1,5 +1,3 @@
-import sys
-sys.stdin = open('sample.txt')
 '''
 분류 : 수학, 정수론, 소수 판정
 '''

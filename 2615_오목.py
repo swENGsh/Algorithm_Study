@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('imput.txt')
+sys.stdin = open('sample.txt')
 
 def check():
     for i in range(19):

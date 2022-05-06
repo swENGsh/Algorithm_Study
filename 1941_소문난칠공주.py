@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('imput.txt')
-
 # 1차원 배열에서의 7공주 위치(0 ~ 24), 선택한 공주 수, 이다솜파의 수(4이상, 7미만이어야함)
 def choice(cnt, sel, S_cnt):
     global ans

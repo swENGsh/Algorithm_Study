@@ -1,3 +1,8 @@
+'''
+분류 : 구현, 많은 조건 분기
+규칙보다는 구현을 실수 없이 하는 것이 중요
+'''
+
 N, M = map(int, input().split())
 k = int(input())
 store = []
@@ -91,5 +96,4 @@ for i in range(k):
                 ans += (y + (M-store[i][1]))
             elif store[i][0] == 2:
                 ans += ((N-y) + (M-store[i][1]))
-
 print(ans)
